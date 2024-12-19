@@ -1,0 +1,118 @@
+/* Estilo global para todas las páginas */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 2rem;
+  }
+  
+  /* Título principal */
+  h1 {
+    font-size: 2.5rem;
+    color: #2d3e50;
+    margin-bottom: 1.5rem;
+    text-align: center;
+  }
+  
+  /* Botones */
+  button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    background-color: #007bff;
+    color: white;
+    border-radius: 0.5rem;
+    transition: background-color 0.3s;
+    margin: 1rem;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  button:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  /* Contenedor principal del juego (index3) */
+  .contenedor-juego {
+    text-align: center;
+    width: 100%;
+    max-width: 25rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0px 0.25rem 0.5rem rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Estilo del tablero en el juego (index3) */
+  .tablero {
+    display: grid;
+    grid-template-columns: repeat(3, 8rem);
+    grid-gap: 1rem;
+    margin: 2rem 0;
+  }
+  
+  .celda {
+    width: 8rem;
+    height: 8rem;
+    font-size: 3rem;
+    text-align: center;
+    border: 0.2rem solid #ccc;
+    background-color: #fff;
+    border-radius: 0.5rem;
+  }
+  
+  /* Estilo del contador de clics (index1) */
+  #contador {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  h2 {
+    font-size: 1.8rem;
+    margin: 1.5rem 0;
+    color: #555;
+  }
+  
+  /* Formulario de conversión de monedas (index2) */
+  input[type="number"], select {
+    padding: 1rem;
+    font-size: 1.2rem;
+    margin: 1.5rem 0;
+    border: 0.2rem solid #ccc;
+    border-radius: 0.5rem;
+    width: 100%;
+    max-width: 15rem;
+  }
+  
+  select {
+    cursor: pointer;
+  }
+  
+  h1, h2 {
+    color: #2d3e50;
+  }
+  
+  /* Mensajes */
+  #mensaje {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #28a745;
+    margin-top: 2rem;
+  }
+  
